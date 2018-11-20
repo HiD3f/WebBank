@@ -1,0 +1,133 @@
+.hiddenaddbutton * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+} 
+
+.hiddenaddbutton .collapsed{
+    display: none
+}
+
+.hiddenaddbutton .expanded{
+    display: inline-block;
+}
+
+.hiddenaddbutton .popupcontainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hiddenaddbutton .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-backdrop-filter:blur(20px);
+}
+
+.hiddenaddbutton .popup{
+    position: absolute;
+    width: 100%;
+}
+
+.hiddenaddbutton .popup.android {
+    top: 0;
+    padding: 30px 12px 0;
+}
+
+.hiddenaddbutton .popup.ios {
+    bottom: 0;
+    padding: 0 12px 30px;
+}
+
+.hiddenaddbutton .message {
+    background: #e3e3e3;
+    position: relative;
+    padding: 16px;
+    border-radius: 3px;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.1); 
+    -webkit-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    -moz-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    -o-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    color: #2f2f2f;
+    font-size: 18pt;
+}
+
+.hiddenaddbutton .popup.ios .message::after{
+    content: '';
+    position: absolute;
+    left: 42%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e3e3e3;
+    clear: both;
+}
+
+.hiddenaddbutton .popup.android .message::before{
+    content: '';
+    position: absolute;
+    right: 4%;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-left: 32px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 20px solid #e3e3e3;
+    clear: both;
+}
+
+.hiddenaddbutton .close-btn{
+    position: absolute;
+    background: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+.hiddenaddbutton .popupcontainer.ios .close-btn{
+    right: 10px;
+    top: 10px;
+}
+
+.hiddenaddbutton .popupcontainer.android .close-btn{
+    right: 10px;
+    bottom: 10px;
+}
+
+.hiddenaddbutton .shareios {
+    background-image: url(https://storageprdv2inwink.blob.core.windows.net/4db9e7dd-5618-e711-80c3-000d3a21070d-public/assets/pictures/shareios.png)
+}
+
+.hiddenaddbutton .plusios {
+    background-image: url(https://storageprdv2inwink.blob.core.windows.net/4db9e7dd-5618-e711-80c3-000d3a21070d-public/assets/pictures/plusios.png)
+}
+
+.hiddenaddbutton .shareandroid {
+    background-image: url(https://storageprdv2inwink.blob.core.windows.net/4db9e7dd-5618-e711-80c3-000d3a21070d-public/assets/pictures/shareandroid.png)
+}
+
+.hiddenaddbutton .micon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin: 0 3px;
+    top: 3px;
+}
+
+.hiddenaddbutton {
+    display: none
+}

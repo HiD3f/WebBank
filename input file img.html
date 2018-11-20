@@ -1,0 +1,56 @@
+<html>
+    <body>
+        <div class="formitem">
+            <label for="file" class="label-file">
+                <span class="userpic" style="background-image:url()"><span class="progress" style="width:13%"></span></span>
+                <span>Choisir une photo de profil</span>
+            </label>
+            <input id="file" class="input-file" type="file">
+        </div>
+        <div class="formitem">
+            <label for="file" class="label-file"><span class="userpic" style="background-image:url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/000/002/380/2a0abaa.jpg)"></span><span>Modifier la photo de profil</span></label>
+            <input id="file" class="input-file" type="file">
+        </div>
+    </body>
+    
+    <style>
+        .formitem {
+            display: inline-block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .userpic{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: grey;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 10px;
+        }
+        .progress {
+            display: inline-block;
+            height: 100%;
+            background-color: cadetblue;
+            float: left;
+        }
+        .label-file {
+             display: flex;
+            width: 100%;
+            align-items: center;
+            cursor: pointer;
+            color: #00b1ca;
+            font-weight: bold;
+        }
+        .label-file:hover {
+            color: #25a5c4;
+        }
+        .input-file {
+            display: none;
+        }
+    </style>
+    
+</html>

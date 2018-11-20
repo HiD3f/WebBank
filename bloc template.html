@@ -1,0 +1,293 @@
+<style>
+
+        .bloc-content{
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .bloc-content *{
+            box-sizing: border-box;
+        }
+        .itemperline{
+            display: inline-block!important;
+            text-align: center;
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 638px){
+         .link{
+             width: 98%!important;
+             height: initial;
+             max-height: initial;
+             min-height: initial;
+             margin-bottom:0;
+          }
+         }
+        .link{
+            text-align: left;
+            display: inline-block;
+            width: 48%;
+            margin: 1%;
+            min-width: 278px;
+            height: 254px;
+            overflow: hidden;
+            position: relative;
+            float: left;
+        }
+        .link,.link:hover,.link:focus,.link:active{
+            text-decoration: none;
+        }
+        .link-image{
+            width: 100%;
+            height: 100%;
+            background-color: gold;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: filter 0.3s ease-in-out; 
+            -webkit-transition: -webkit-filter 0.3s ease-in-out;
+            -moz-transition: -moz-filter 0.3s ease-in-out;
+            -o-transition: -o-filter 0.3s ease-in-out;
+        }
+        
+        .link:hover .link-content{
+            background: rgba(255,255,255,0.7);
+        }
+
+        .link:hover .link-image{
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: gray; /* IE 6-9 */
+        }
+
+        .link:hover .link-title{
+            color: rgba(0,0,0,0.9)
+        }
+
+        .link-content{
+            padding: 0;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            display: -ms-flexbox;
+            display: -moz-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            -webkit-flex-align: flex-end;
+            -ms-flex-align: flex-end;
+            -webkit-align-items: flex-end;
+            padding: 22px;
+            transition: background 0.3s ease-in-out; 
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            -o-transition: background 0.3s ease-in-out;
+        }
+        .link-title{
+            color:rgba(255,255,255,1);
+            font-size: 22pt;
+            font-weight: 600;
+            margin-bottom: 2px;
+            transition: color 0.3s ease-in-out; 
+            -webkit-transition: color 0.3s ease-in-out;
+            -moz-transition: color 0.3s ease-in-out;
+            -o-transition: color 0.3s ease-in-out;
+        }
+        .link-infos{
+            color:#F28526;
+            font-size: 10pt;
+            font-weight: 600;
+            text-transform: uppercase
+        }
+  
+</style>
+
+<html>
+
+    <div class="bloc-content">
+        <div>
+            <div class="groups">
+                <div class="itemperline">
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://www.visagesdumaroc.com/content-slider/pub/trek-desert-maroc.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">DECOUVERTE</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Au coeur de la Palmeraie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://i.imgur.com/mgprRCH.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">GASTRONOMIE</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Saveurs orientales</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/140704130143-marrakech-photography-sun-rays-horizontal-large-gallery.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">CULTURE</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Traditions marrakchies</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://www.photographe-marrakech-maroc.com/wp-content/uploads/2015/02/photographer-marrakech-3-1000x620.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">ARTS</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Artistes et artisans</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://www.oai13.com/wp-content/uploads/2013/10/palais-el-badi.png)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">HISTOIRE</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Patrimoine vivant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/140704130818-marrakech-photography-sunset-2-horizontal-large-gallery.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">TOUTES</div>
+                                <div class="link-infos">
+                                    <span class="link-source">les activités proposées</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloc-content">
+        <div>
+            <div class="groups">
+                <div class="itemperline">
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://www.visagesdumaroc.com/content-slider/pub/trek-desert-maroc.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">DISCOVERY</div>
+                                <div class="link-infos">
+                                    <span class="link-source">The heart of the palm grove</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://i.imgur.com/mgprRCH.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">GASTRONOMY</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Moroccan flavours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/140704130143-marrakech-photography-sun-rays-horizontal-large-gallery.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">CULTURE</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Traditions of Marrakesh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://www.photographe-marrakech-maroc.com/wp-content/uploads/2015/02/photographer-marrakech-3-1000x620.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">ARTS</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Artists and craftsmen</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://www.oai13.com/wp-content/uploads/2013/10/palais-el-badi.png)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">HISTOIRE</div>
+                                <div class="link-infos">
+                                    <span class="link-source">Living heritage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/140704130818-marrakech-photography-sunset-2-horizontal-large-gallery.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">ALL</div>
+                                <div class="link-infos">
+                                    <span class="link-source">available activities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</html>
+
+/orange-leaders-meeting/fr/sessions?page=1&eventThemes=3260715e-3020-e711-80c3-000d3a22ad01
+
+/orange-leaders-meeting/fr/sessions?page=1&eventThemes=298692a4-3020-e711-80c3-000d3a22ad01
+
+/orange-leaders-meeting/fr/sessions?page=1&eventThemes=87c990ae-3020-e711-80c3-000d3a22ad01
+
+/orange-leaders-meeting/fr/sessions?page=1&eventThemes=f677b8b7-3020-e711-80c3-000d3a22ad01
+
+#/orange-leaders-meeting/fr/sessions?page=1&eventThemes=f61d9dc3-3020-e711-80c3-000d3a22ad01
+
+/orange-leaders-meeting/fr/sessions?page=1&eventThemes=f61d9dc3-3020-e711-80c3-000d3a22ad01%2Bf677b8b7-3020-e711-80c3-000d3a22ad01%2B87c990ae-3020-e711-80c3-000d3a22ad01%2B298692a4-3020-e711-80c3-000d3a22ad01%2B3260715e-3020-e711-80c3-000d3a22ad01

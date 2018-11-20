@@ -1,0 +1,65 @@
+<html>
+    <div class="video-fond">
+        <video preload="true" loop="loop" muted="true" autoplay="true">
+            <source src="http://nikevideo.nike.com/72451143001/201605/1954/72451143001_4892737406001_4892703534001.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!--<div class="video-fond">
+        <video preload="true" loop="loop" muted="true" autoplay="true">
+            <source src="http://nikevideo.nike.com/72451143001/201605/1954/72451143001_4892737406001_4892703534001.mp4" type="video/mp4">
+        </video>-->
+    </div>
+</html>
+
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .video-fond{
+        overflow: hidden;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .video-fond > video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+   
+    @media (min-aspect-ratio: 16/9) {
+        .video-fond > video{
+            height: 300%;
+            top: -100%;
+        }
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+        .video-fond > video{
+            width: 300%;
+            left: -100%;
+        }
+    }
+
+    @supports (object-fit : cover) {
+        .video-fond > video{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit : cover;
+        }
+    }
+
+</style>

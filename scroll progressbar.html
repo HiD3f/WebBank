@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container"></div>
+        <div class="progress">
+            <div class="bar" id="progressbar"></div>
+        </div>
+    </div>
+    <div class="article">
+
+    </div>
+</body>
+
+<style>
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: grey
+}
+
+.navbar .container{
+    background-color: brown;
+    height: 100%;
+}
+
+.navbar .progress{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: yellow;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar .progress .bar{
+    background-color: palevioletred;
+    height: 100%;
+}
+
+.article{
+    margin-top: 70px;
+    height: 4000px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(red),blue);
+    background-image: -webkit-linear-gradient(top, red, blue);
+    background-image: -moz-linear-gradient(top, red, blue);
+    background-image: linear-gradient(to bottom, red, blue);
+}
+
+</style>
+
+<script>
+$(window).load(function(){
+    $(window).scroll(function (){
+        var s = $(window).scrollTop(),
+            d = $(document).height(),
+            c = $(window).height();
+        
+        
+        /*console.log(d);
+        console.log(c);*/
+
+            scrollPercent = (s / (d - c));
+            var position = scrollPercent*100;
+        console.log(position);    
+        
+        $("#progressbar").css("width", position+"%");
+    })
+})
+</script>
+
+</html>

@@ -1,0 +1,72 @@
+
+<html>
+
+    <div class="imagedeco left">
+        
+        <div class="deco"></div>
+
+        <div class="image" style="background-image:url(http://i22.servimg.com/u/f22/14/02/58/82/dasert11.jpg)"></div>
+
+    </div>
+
+    <div class="imagedeco right">
+        
+        <div class="deco"></div>
+
+        <div class="image" style="background-image:url(http://i22.servimg.com/u/f22/14/02/58/82/dasert11.jpg)"></div>
+
+    </div>
+
+    <style>
+
+        .imagedeco{
+            max-width: 362px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 100%;
+            max-height: 284px;
+        }
+
+        .imagedeco .deco{
+            border: 16px solid #ff7900;
+            height: 85%;
+            display: inline-block;
+            width: 85%;
+            box-sizing: border-box;
+            position: absolute;
+        }
+
+        .imagedeco .image{
+            width: 85%;
+            height: 85%;
+            position: absolute;
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+        }
+
+        .imagedeco.left .deco {
+            top: 0;
+            left: 0
+        }
+
+        .imagedeco.left .image{
+            bottom: 0;
+            right: 10px;
+        }
+
+        .imagedeco.right .deco {
+            bottom: 0;
+            right: 10px;
+        }
+
+        .imagedeco.right .image{
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+    
+</html>

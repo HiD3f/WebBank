@@ -1,0 +1,33 @@
+<div id="map" style="width:100%;height:450px;"></div>
+<script>
+    function initMap() {
+        var uluru = {lat: 48.871851, lng: 2.302967};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            scrollwheel: false,
+            center: uluru
+        });
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h4 id="firstHeading" class="firstHeading">HUBDAY Future of Mobile Engagement</h4>'+
+            '<div id="bodyContent">'+
+            '<p><b>Fédération Nationale des Travaux Publics</b>, 3 rue de Berri, 75008 Paris <br>' +
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({content: contentString});
+ 
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: 'https://storageprdv2inwink.blob.core.windows.net/cec8c7fb-6a36-e711-80c3-000d3a2102ed-public/assets/pictures/markerIcon-iab_small.png'
+        });
+
+        marker.addListener('click', function() {infowindow.open(map, marker);});
+      }
+ 
+</script>
+    
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvRWQVZvZRX__tPUMDW5TjsahIwot9PYI&callback=initMap"></script>

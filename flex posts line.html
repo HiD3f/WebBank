@@ -1,0 +1,148 @@
+<html>
+    <style>
+        .bloc-content{
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .bloc-content *{
+            box-sizing: border-box;
+        }
+        .itemperline{
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+        }
+         @media (max-width: 950px){
+         .link{
+             width: 40%!important;
+          }
+         }
+        @media (max-width: 638px){
+         .link{
+             width: 80%!important;
+             height: initial;
+             max-height: initial;
+             min-height: initial;
+             margin-bottom:0;
+          }
+         }
+        .link{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            width: 31%;
+            margin: 1%;
+            min-width: 278px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            background-color: #e3e3e3;
+        }
+        .link,.link:hover,.link:focus,.link:active{
+            text-decoration: none;
+        }
+        .link-image{
+            width: 100%;
+            padding-bottom: 60%;
+            background-color: gold;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .link-content{
+            padding: 17px 0 0 0;
+        }
+        .link-title{
+            color:rgba(0, 0, 0, 0.9);
+            font-size: 14pt;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .link-infos{
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 10pt;
+            font-weight: 600;
+            text-transform: uppercase
+        }
+        .link-source{
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+            padding-right: 3px;
+        }
+        .excerpt{
+            margin: 8px 0 0 0;
+            color: rgba(0, 0, 0, 0.9);
+            line-height: 17pt;
+        }
+    </style>
+    <div class="bloc-content">
+        <div>
+            <div class="groups">
+                <div class="itemperline">
+                    <a target="_blank" href="http://www.infinitesquare.com/actualites/premiere-migration-avec-tfs-database-import-service" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(http://infinitesquaresiteweb.blob.core.windows.net/actualites/premiere-migration-avec-tfs-database-import-service.jpg)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">Migration TFS 2013 à VSTS avec TFS Database Import Service</div>
+                                <div class="link-infos">
+                                    <span class="link-source">INFINITE BLOG</span>
+                                    <span class="link-author">INFINITE BLOG</span>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <p class="excerpt">
+                                    Pour notre client Isipharm nous avons réalisé une migration 
+                                    TFS 2013 vers VSTS en utilisant pour la première fois TFS 
+                                    Database Import Service. L'outil qui a été présenté en public 
+                                    preview en novembre dernier par Microsoft tient ses promesses...
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://blogs.infinitesquare.com/posts/mobile/android-la-limite-des-65536-references-multi-dex-et-le-mettre-en-place-avec-xamarin-et-visualstudio" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(https://open.xamarin.com/images/index/card-forms.png)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">#Android, la limite des 65536 références, multi-DEX et le mettre en place avec #XAMARIN et #VisualStudio</div>
+                                <div class="link-infos">
+                                    <span class="link-source">INFINITE BLOG</span>
+                                    <span class="link-author">Jonathan ANTOINE</span>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <p class="excerpt">
+                                    Il existe une limite au nombre de références (principalement des méthodes) 
+                                    que vous pouvez mettre dans une application Android : 65536 et pas une de 
+                                    plus.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://blogs.infinitesquare.com/posts/alm/visual-studio-2017-et-docker" class="group link bloc-mediumbg ">
+                        <div class="link-image" style="background-image: url(https://www.thecodingmachine.com/wp-content/uploads/2015/11/docker-1.png)">   
+                        </div>
+                        <div class="link-content">
+                            <div class="content-header">
+                                <div class="link-title">Visual Studio 2017 et Docker</div>
+                                <div class="link-infos">
+                                    <span class="link-source">INFINITE BLOG</span>
+                                    <span class="link-author">Vivien FABING</span>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <p class="excerpt">
+                                    Avec la sortie récente de la nouvelle version 2017 de Visual Studio, 
+                                    Microsoft fait un grand pas en avant en matière d’outillage pour 
+                                    commencer à développer sur Docker. En effet, il ne faut pas compter 
+                                    plus de 5 minutes pour mettre en place un projet web ASP.NET Core 
+                                    sous Docker avec VS 2017.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

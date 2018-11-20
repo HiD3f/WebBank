@@ -1,0 +1,101 @@
+<html>
+<div class="page">
+    <div class="derouleur">
+        <span class="immobile">Event</span>
+        <span class="mobile">
+            <span>Orchestration</span>
+            <span>Experience</span>
+            <span>Attendance Management</span>
+            <span>Marketing</span>
+            <span>Content Management</span>
+            <span>Data Analysis</span>
+        </span>
+    </div>
+</div>
+    <style>
+        .page{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #e3e3e3
+        }
+        .derouleur{
+            background-color: #666666;
+            display: inline-block;
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .immobile{
+            text-transform: uppercase;
+            color: white;
+        }
+        .mobile{
+            position: relative;
+            margin-left: 3px;
+            width: 180px;
+            height: 33px;
+            top: 7px;
+            display: inline-block;
+            color: orange;
+            animation-delay: 2s;
+            animation-name: extend;
+            animation-duration: 24s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+        }
+        .mobile span{
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            width: 346px;
+            text-align: left;
+            animation-name: deroule;
+            animation-duration: 24s;
+            animation-iteration-count: infinite;
+        }
+        .mobile span:nth-child(1){
+            animation-delay: 0s;
+        }
+        .mobile span:nth-child(2){
+            animation-delay: 4s;
+        }
+        .mobile span:nth-child(3){
+            animation-delay: 8s;
+        }
+        .mobile span:nth-child(4){
+            animation-delay: 12s;
+        }
+        .mobile span:nth-child(5){
+            animation-delay: 16s;
+        }
+        .mobile span:nth-child(6){
+            animation-delay: 20s;
+        }
+
+        @keyframes deroule {
+            0% {opacity: 0;top:20px}
+            8.33333% {opacity: 1;top : 0}
+            16.6667% {opacity: 0;top:-20px}
+            100% {opacity: 0}
+        }
+
+        @keyframes extend {
+            0% {width: 180px}
+            8.33333% {width: 180px}
+            16.6667% {width: 144px}
+            24.9999% {width: 144px}
+            33.3333% {width: 326px}
+            41.6667% {width: 326px}
+            49.9999% {width: 138px}
+            58.3333% {width: 138px}
+            66.6667% {width: 282px}
+            74.9999% {width: 282px}
+            83.3333% {width: 180px}
+            100% {width: 180px}
+        }
+    </style>
+</html>

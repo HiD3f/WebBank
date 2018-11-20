@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>add to homescreen</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <button id="aths-openBtn" class="aths-openBtn">AJOUTER A L'ECRAN test device</button>
+  
+    <div class="popupcontainer ios collapsed">
+        <div class="background"></div>
+        <div class="popup ios">
+            <div class="message">
+                <p>Pour ajouter l'application web à l'écran de votre smartphone, cliquez sur l'icône
+                    <i class="micon shareios"></i> puis <i class="micon plusios"></i>
+                </p>
+            </div>
+        </div>
+        <button id="aths-closeBtn" class="close-btn">fermer</button>
+    </div>
+
+    <div class="popupcontainer android collapsed">
+        <div class="background"></div>
+        <div class="popup android">
+            <div class="message">
+                <p>Pour ajouter l'application web à l'écran de votre smartphone, cliquez sur l'icône
+                    <i class="micon shareandroid"></i> puis <b>[Ajouter à l'écran d'accueil]</b>
+                </p>
+            </div>
+        </div>
+        <button id="aths-closeBtn" class="close-btn">fermer</button>
+    </div>
+
+   
+
+    <script>
+       document.initButton = function() {
+           console.log("preparing button");
+           $('.links-list').append('<button id="aths-openBtn" class="aths-openBtn">AJOUTER A L\'ECRAN test device</button>');
+            if(navigator && navigator.userAgent.indexOf("iP") != -1){
+                $("#aths-openBtn").removeClass("collapsed").addClass("expanded");
+                $("#aths-openBtn").click(function(){
+                    $(".ios").removeClass("collapsed").addClass("expanded");
+                })
+            }
+            if(navigator && navigator.userAgent.indexOf("Android") != -1){
+                 $("#aths-openBtn").removeClass("collapsed").addClass("expanded");
+                 $("#aths-openBtn").click(function(){
+                    $(".android").removeClass("collapsed").addClass("expanded");
+                })
+             }
+            else{
+                $("#aths-openBtn").addClass("collapsed");
+            }
+            $(".close-btn").click(function(){
+                $(".popupcontainer").removeClass("expanded").addClass("collapsed");
+            });
+            $('head').append('<link rel="apple-touch-icon" sizes="128x128" href="https://storageprdv2inwink.blob.core.windows.net/4db9e7dd-5618-e711-80c3-000d3a21070d-public/assets/pictures/LM2017-icon2.png">');
+
+       }
+    </script>
+    <script async defer type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" onload="document.initButton()"></script>
+     <!--document.getElementsByTagName('head')[0].appendChild('')-->
+
+      <!--  // $(function(){
+        //     $('.links-list').append('<button id="aths-openBtn" class="aths-openBtn">AJOUTER A L\'ECRAN test device</button>');
+        // });
+
+        // $(function(){
+            
+        //     if(navigator && navigator.userAgent.indexOf("iP") != -1){
+        //         $("#aths-openBtn").removeClass("collapsed").addClass("expanded");
+        //         $("#aths-openBtn").click(function(){
+        //             $(".ios").removeClass("collapsed").addClass("expanded");
+        //         })
+        //     }
+        //     if(navigator && navigator.userAgent.indexOf("Android") != -1){
+        //          $("#aths-openBtn").removeClass("collapsed").addClass("expanded");
+        //          $("#aths-openBtn").click(function(){
+        //             $(".android").removeClass("collapsed").addClass("expanded");
+        //         })
+        //      }
+        //     else{
+        //         $("#aths-openBtn").addClass("collapsed");
+        //     }
+        // })
+       
+        // $(function(){
+        //     $(".close-btn").click(function(){
+        //         $(".popupcontainer").removeClass("expanded").addClass("collapsed");
+        //     })
+        // });
+
+        // $(function(){
+        //     $('head').append('<link rel="apple-touch-icon" sizes="128x128" href="https://storageprdv2inwink.blob.core.windows.net/4db9e7dd-5618-e711-80c3-000d3a21070d-public/assets/pictures/LM2017-icon2.png">');
+        // });
+
+        // $(function(){
+        //     $('head').append('<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>');
+        // });
+
+        // var div = document.getElementsByTagName('head')[0].appendChild('<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>')
+
+        
+
+    </script> -->
+
+</body>
+
+</html>

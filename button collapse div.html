@@ -1,0 +1,46 @@
+<html>
+	
+	<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+	
+	<div class="searchBlock hidden"></div>
+	<div class="mapHideBtn collapsed"></div>
+
+</html>	
+	
+<style>
+
+	.searchBlock {
+	  display : block;
+	  width: 300px;
+	  height: 300px;
+	  background : red;  
+	}
+
+	.hidden {height: 0; transition : height 0.4s ease-in}
+	.shown {height: 300px;transition : height 0.4s ease-in}
+
+	.mapHideBtn {
+	  display : block;
+	  width: 300px;
+	  height: 50px;
+	  background : green;
+}
+
+</style>
+
+
+<script>
+
+	$('.mapHideBtn').click(function(){
+	  if ($(this).hasClass("collapsed")) {
+			$('.searchBlock').removeClass("hidden").addClass("shown");
+		$('.mapHideBtn').removeClass("collapsed").addClass("expanded");
+	  } 
+	  
+	  else {
+	   $('.searchBlock').removeClass("shown").addClass("hidden");
+	   $('.mapHideBtn').removeClass("expanded").addClass("collapsed");
+	  };
+	});
+
+</script>
